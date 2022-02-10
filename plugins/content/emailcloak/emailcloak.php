@@ -104,7 +104,7 @@ class PlgContentEmailcloak extends CMSPlugin
 
 		
 		// Example: any@example.org
-		$searchEmail = '([a-zA-Z0-9._-]+@([a-zA-Z0-9_-]+\.)+[a-zA-Z0-9_-]+)';
+		$searchEmail = '([\w\.\'\-\+]+\@(?:[a-z0-9\.\-]+\.)+(?:[a-zA-Z0-9\-]{2,345}))';
 
 		// Example: any@example.org?subject=anyText
 		$searchEmailLink = $searchEmail . '([?&][\x20-\x7f][^"<>]+)';
